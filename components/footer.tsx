@@ -60,7 +60,7 @@ export const Footer = () => {
               className="bg-white hover:bg-gray-50 p-3 rounded border border-gray-200 hover:border-irish-green transition-all duration-200"
             >
               <div className="relative w-[80px] h-[32px]">
-                <Image src="/srij-new.svg" alt="SRIJ" fill className="object-contain" />
+                <Image src="/srij.svg" alt="SRIJ" fill className="object-contain" />
               </div>
             </Link>
             <Link
@@ -80,7 +80,7 @@ export const Footer = () => {
               className="bg-white hover:bg-gray-50 p-3 rounded border border-gray-200 hover:border-irish-burgundy transition-all duration-200"
             >
               <div className="relative w-[80px] h-[32px]">
-                <Image src="/gamecare-new.svg" alt="GamCare" fill className="object-contain" />
+                <Image src="/gamecare.svg" alt="GamCare" fill className="object-contain" />
               </div>
             </Link>
             <Link
@@ -90,17 +90,17 @@ export const Footer = () => {
               className="bg-white hover:bg-gray-50 p-3 rounded border border-gray-200 hover:border-irish-green transition-all duration-200"
             >
               <div className="relative w-[80px] h-[32px]">
-                <Image src="/gamble-aware.webp" alt="GambleAware" fill className="object-contain" />
+                <Image src="/gamble.webp" alt="GambleAware" fill className="object-contain" />
               </div>
             </Link>
             <Link
               href="https://www.jogoresponsavel.pt/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white hover:bg-gray-50 p-3 rounded border border-gray-200 hover:border-gray-400 transition-all duration-200"
+              className="bg-black hover:bg-gray-50 p-3 rounded border border-gray-200 hover:border-gray-400 transition-all duration-200"
             >
               <div className="relative w-[80px] h-[32px]">
-                <Image src="/jogo-responsavel-new.png" alt="Jogo Responsável" fill className="object-contain" />
+                <Image src="/jogo2.png" alt="Jogo Responsável" fill className="object-contain" />
               </div>
             </Link>
           </div>

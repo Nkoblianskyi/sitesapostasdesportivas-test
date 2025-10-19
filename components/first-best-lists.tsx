@@ -39,13 +39,13 @@ export const FirstListSites = () => {
     <>
       <section
         id="rankings"
-        className="py-8 sm:py-12 md:py-16 w-full relative bg-gradient-to-br from-[#169B62]/5 via-white to-[#D4AF37]/5"
+        className="py-4 sm:py-8 md:py-8 w-full relative bg-gradient-to-br from-[#169B62]/5 via-white to-[#D4AF37]/5"
       >
         {/* Decorative Portuguese flag color accents */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#169B62] via-[#D4AF37] to-[#A52A2A]"></div>
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#A52A2A] via-[#D4AF37] to-[#169B62]"></div>
 
-        <div className="w-full max-w-[1280px] mx-auto">
+        <div className="w-full max-w-[1300px] mx-auto">
           <div className="px-2 sm:px-2">
             <div className="space-y-3 sm:space-y-4">
               {firstListSites.map((site, index) => (
@@ -70,7 +70,7 @@ export const FirstListSites = () => {
                       {/* Mobile Layout */}
                       <div className="flex md:hidden min-h-[100px] py-2">
                         <div className="flex flex-col items-center justify-center w-2/5 py-2 pt-6 border-r border-gray-200">
-                          <div className="bg-gray-50 p-2 border border-gray-200 w-28 h-14 flex items-center justify-center mb-2">
+                          <div className="bg-black p-2 border border-gray-200 w-28 h-14 flex items-center justify-center mb-2">
                             <Image
                               src={site.logo || "/placeholder.svg"}
                               alt={site.name}
@@ -90,12 +90,12 @@ export const FirstListSites = () => {
 
                         <div className="flex flex-col justify-center w-3/5 px-2 py-2">
                           <div className="text-center mb-2">
-                            <p className="text-xs font-semibold text-gray-600 mb-2 uppercase tracking-wide">
+                            <p className="text-[10px] font-semibold text-gray-600 mb-2 uppercase tracking-wide">
                               Bónus de Boas-Vindas
                             </p>
-                            <div className="font-bold text-[#169B62] text-lg leading-tight">{site.bonus}</div>
+                            <div className="font-bold text-[#169B62] text-xl leading-tight">{site.bonus}</div>
                             {site.dopbonus && (
-                              <div className="font-bold text-[#169B62] text-sm leading-tight mt-1">{site.dopbonus}</div>
+                              <div className="font-bold text-[#169B62] text-lg leading-tight mt-1">{site.dopbonus}</div>
                             )}
                           </div>
                           <div className="flex flex-col items-center gap-1">
@@ -113,7 +113,7 @@ export const FirstListSites = () => {
                           <div className="bg-gray-900 text-white w-10 h-10 flex items-center justify-center text-base font-bold flex-shrink-0 rounded-full">
                             {index + 1}
                           </div>
-                          <div className="w-32 h-16 flex items-center justify-center bg-gray-50 border border-gray-200 p-2 flex-shrink-0">
+                          <div className="w-32 h-16 flex items-center justify-center bg-black border border-gray-200 p-2 flex-shrink-0">
                             <Image
                               src={site.logo || "/placeholder.svg"}
                               alt={site.name}
@@ -134,19 +134,19 @@ export const FirstListSites = () => {
                         </div>
 
                         <div className="flex flex-col items-center justify-center w-56 flex-shrink-0">
-                          <p className="font-semibold mb-2 text-sm text-gray-600 uppercase tracking-wide">
+                          <p className="font-semibold mb-2 text-xs text-gray-600 uppercase tracking-wide">
                             Bónus de Boas-Vindas
                           </p>
                           <div className="text-center min-h-[48px] flex flex-col justify-center">
-                            <div className="font-bold text-[#169B62] text-xl leading-tight">{site.bonus}</div>
+                            <div className="font-bold text-[#169B62] text-2xl leading-tight">{site.bonus}</div>
                             {site.dopbonus && (
-                              <div className="font-bold text-[#169B62] text-lg mt-2 leading-tight">{site.dopbonus}</div>
+                              <div className="font-bold text-[#169B62] text-xl mt-2 leading-tight">{site.dopbonus}</div>
                             )}
                           </div>
                         </div>
 
                         <div className="text-center flex flex-col items-center gap-1 w-32 flex-shrink-0">
-                          <Button className="bg-[#D4AF37] hover:bg-[#B8941F] text-white text-base px-4 py-4 font-semibold uppercase tracking-wide">
+                          <Button className="bg-[#D4AF37] hover:bg-[#B8941F] text-white text-xs px-4 py-4 font-semibold uppercase tracking-wide">
                             Obter Bónus
                           </Button>
                           <span className="text-xs text-gray-500">Visitar Site</span>
@@ -159,7 +159,7 @@ export const FirstListSites = () => {
                           <div className="bg-gray-900 text-white w-12 h-12 flex items-center justify-center text-lg font-bold flex-shrink-0 rounded-full">
                             {index + 1}
                           </div>
-                          <div className="w-56 h-20 xl:h-24 flex items-center justify-center bg-gray-50 border border-gray-200 p-2 flex-shrink-0">
+                          <div className="w-56 h-20 xl:h-24 flex items-center justify-center bg-black border border-gray-200 p-2 flex-shrink-0">
                             <Image
                               src={site.logo || "/placeholder.svg"}
                               alt={site.name}
@@ -180,15 +180,15 @@ export const FirstListSites = () => {
                         </div>
 
                         <div className="flex flex-col items-center justify-center w-80 flex-shrink-0">
-                          <p className="font-semibold mb-2 text-sm text-gray-600 uppercase tracking-wide">
+                          <p className="font-semibold mb-2 text-xs text-gray-600 uppercase tracking-wide">
                             Bónus de Boas-Vindas
                           </p>
                           <div className="text-center min-h-[70px] flex flex-col justify-center">
-                            <div className="font-bold text-[#169B62] xl:text-xl text-lg leading-tight">
+                            <div className="font-bold text-[#169B62] xl:text-2xl text-lg leading-tight">
                               {site.bonus}
                             </div>
                             {site.dopbonus && (
-                              <div className="font-bold text-[#169B62] xl:text-lg mt-2 text-sm leading-tight">
+                              <div className="font-bold text-[#169B62] xl:text-xl mt-2 text-sm leading-tight">
                                 {site.dopbonus}
                               </div>
                             )}
@@ -196,7 +196,7 @@ export const FirstListSites = () => {
                         </div>
 
                         <div className="text-center flex flex-col items-center gap-2 w-48 flex-shrink-0">
-                          <Button className="bg-[#D4AF37] hover:bg-[#B8941F] text-white text-xl px-4 py-4 font-semibold uppercase tracking-wide">
+                          <Button className="bg-[#D4AF37] hover:bg-[#B8941F] text-white text-lg px-4 py-4 font-semibold uppercase tracking-wide">
                             Obter Bónus
                           </Button>
                           <span className="text-sm text-gray-500">Visitar Site</span>

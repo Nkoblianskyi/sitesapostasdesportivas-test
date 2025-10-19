@@ -121,7 +121,7 @@ export const RankingModal = ({ show, onClose, modalType, topSite, renderStars }:
                 <div className="text-center">
                   <div>
                     <div className="mb-4 sm:mb-6">
-                      <div className="w-48 h-28 sm:w-40 sm:h-28 md:w-48 md:h-32 mx-auto mb-3 sm:mb-4 flex items-center justify-center bg-white border-2 border-yellow-500 rounded-lg p-2 shadow-lg">
+                      <div className="w-48 h-28 sm:w-40 sm:h-28 md:w-48 md:h-32 mx-auto mb-3 sm:mb-4 flex items-center justify-center bg-black border-2 border-yellow-500 rounded-lg p-2 shadow-lg">
                         <Image
                           src={topSite.logo || "/placeholder.svg"}
                           alt={topSite.name}

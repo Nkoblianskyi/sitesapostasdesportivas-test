@@ -34,7 +34,7 @@ export const FirstListSites = () => {
       <section id="rankings" className="py-4 sm:py-4 md:py-4 w-full">
         <div className="w-full max-w-[1280px] mx-auto">
           <div className="px-2 sm:px-4">
-            <div className="space-y-4 sm:space-y-6">
+            <div className="space-y-2 sm:space-y-4">
               {firstListSites.map((site, index) => (
                 <Card
                   key={site.id}
