@@ -1,5 +1,6 @@
 "use client"
-import { Shield, Gift, Lock } from "lucide-react"
+import { Gift, Lock } from "lucide-react"
+import Image from "next/image"
 
 interface HeroProps {
   onOpenModal: (type: "age" | "terms" | "ranking" | "disclaimer") => void
@@ -37,7 +38,7 @@ export const Hero = ({ onOpenModal }: HeroProps) => {
 
         <div className="grid grid-cols-3 gap-2 md:gap-4 max-w-3xl mx-auto mb-2 md:mb-4">
           <div className="flex items-center justify-center gap-1 md:gap-2">
-            <Shield className="w-4 h-4 md:w-6 md:h-6 text-irish-gold flex-shrink-0" />
+            <Image src="/srij.svg" alt="Logo" width={32} height={32} />
             <span className="text-xs md:text-sm font-medium text-white">Licença SRIJ</span>
           </div>
           <div className="flex items-center justify-center gap-1 md:gap-2">

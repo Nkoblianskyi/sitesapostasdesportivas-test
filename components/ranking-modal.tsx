@@ -91,8 +91,7 @@ export const RankingModal = ({ show, onClose, modalType, topSite, renderStars }:
                   <h3 className="text-base sm:text-lg font-bold mb-3 text-gray-900">Aviso Importante</h3>
                   <div className="text-left space-y-3 text-xs sm:text-sm text-gray-700">
                     <p>
-                      Este site contém links de afiliados. Podemos receber comissões quando clica em links para casas de
-                      apostas. As nossas análises mantêm-se independentes e imparciais.
+                      Este site contém links de afiliados. As nossas análises mantêm-se independentes e imparciais.
                     </p>
                     <p className="font-semibold text-red-600">
                       Aposte com responsabilidade. Apenas para maiores de 18 anos. O jogo pode causar dependência.
