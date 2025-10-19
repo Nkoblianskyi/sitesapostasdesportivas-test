@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+
+  /* Professional sports journalism border animation */
+  @keyframes news-scan {
+    0% {
+      background-position: -200% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+
+  .news-border {
+    position: relative;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      transparent,
+      rgba(212, 175, 55, 0.1),
+      rgba(212, 175, 55, 0.3),
+      rgba(212, 175, 55, 0.2),
+      rgba(212, 175, 55, 0.3),
+      rgba(212, 175, 55, 0.1),
+      transparent,
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: news-scan 4s linear infinite;
+    padding: 2px;
+    border-radius: 0;
+  }
+
+  .news-grid {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .news-glow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 0 1px rgba(212, 175, 55, 0.2);
+  }
+}
+
+@layer base {
+  :root {
+    /* Portuguese sports betting color system - clean and professional */
+    --background: 0 0% 100%; /* Pure white background */
+    --foreground: 0 0% 10%; /* Dark text */
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 142 76% 36%; /* Green primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 20%; /* Dark gray secondary */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 43 74% 49%; /* Gold accent */
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 43 74% 49%;
+    --chart-1: 142 76% 36%;
+    --chart-2: 43 74% 49%;
+    --chart-3: 0 59% 41%;
+    --chart-4: 0 0% 75%;
+    --chart-5: 0 0% 90%;
+    --radius: 0.25rem;
+
+    /* Portuguese sports betting brand colors */
+    --irish-green: 142 76% 36%; /* Rich green #169B62 */
+    --irish-gold: 43 74% 49%; /* Vibrant gold #D4AF37 */
+    --irish-burgundy: 0 59% 41%; /* Deep burgundy #A52A2A */
+    --irish-cream: 0 0% 98%; /* Light cream #FAFAFA */
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 43 74% 49%;
+    --chart-1: 0 0% 20%;
+    --chart-2: 0 0% 25%;
+    --chart-3: 0 0% 30%;
+    --chart-4: 0 0% 35%;
+    --chart-5: 0 0% 40%;
+
+    /* Dark mode Portuguese colors */
+    --irish-green: 142 76% 36%;
+    --irish-gold: 43 74% 49%;
+    --irish-burgundy: 0 59% 41%;
+    --irish-cream: 40 40% 97%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-color: #fafafa;
+  }
+}
+
+/* CNN news color utility classes with red theme */
+.bg-news-red {
+  background-color: hsl(var(--news-red));
+}
+
+.bg-news-black {
+  background-color: hsl(var(--news-black));
+}
+
+.bg-news-white {
+  background-color: hsl(var(--news-white));
+}
+
+.bg-news-gray {
+  background-color: hsl(var(--news-gray));
+}
+
+.text-news-red {
+  color: hsl(var(--news-red));
+}
+
+.text-news-black {
+  color: hsl(var(--news-black));
+}
+
+.text-news-white {
+  color: hsl(var(--news-white));
+}
+
+.text-news-gray {
+  color: hsl(var(--news-gray));
+}
+
+.border-news-red {
+  border-color: hsl(var(--news-red));
+}
+
+.border-news-black {
+  border-color: hsl(var(--news-black));
+}
+
+.border-news-gray {
+  border-color: hsl(var(--news-gray));
+}
+
+.fill-news-red {
+  fill: hsl(var(--news-red));
+}
+
+.fill-news-black {
+  fill: hsl(var(--news-black));
+}
+
+.fill-news-gray {
+  fill: hsl(var(--news-gray));
+}
